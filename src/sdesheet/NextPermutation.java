@@ -27,18 +27,24 @@ public class NextPermutation {
    */
 
   public static void main(String[] args) {
-    int[] temp = new int[3];
-    temp[0] = 3;
-    temp[1] = 2;
-    temp[2] = 1;
+    int[] temp = {3, 2, 1};
 
+    int[] temp1 = {1, 2, 3, 6, 5, 4};
+
+    int[] temp3 = {2, 3, 1};
     System.out.println(nextPermutation(temp));
+    nextPermutationOptimized(temp1);
+    System.out.println(Arrays.toString(temp1));
+    nextPermutationOptimized(temp3);
+    System.out.println(Arrays.toString(temp3));
   }
 
   /**
    * Brute force
    * Time complexity = n! * n
+   *
    * @param nums
+   *
    * @return
    */
   private static List<Long> nextPermutation(int[] nums) {
@@ -58,5 +64,38 @@ public class NextPermutation {
       }
     }
     return permutations.get(0);
+  }
+
+  public static void nextPermutationOptimized(int[] nums) {
+    int pivot = -1;
+    for (int i = nums.length - 2; i >= 0; i--) {
+      if (nums[i] < nums[i + 1]) {
+        pivot = i;
+        break;
+      }
+    }
+    if (pivot == -1) {
+      reverseArray(nums, 0, nums.length - 1);
+      return;
+    }
+    for (int i = nums.length - 1; i > pivot; i--) {
+      if (nums[i] > nums[pivot]) {
+        int temp = nums[pivot];
+        nums[pivot] = nums[i];
+        nums[i] = temp;
+        break;
+      }
+    }
+    reverseArray(nums, pivot + 1, nums.length - 1);
+  }
+
+  public static void reverseArray(int[] nums, int start, int end) {
+    while (start < end) {
+      int temp = nums[start];
+      nums[start] = nums[end];
+      nums[end] = temp;
+      start++;
+      end--;
+    }
   }
 }

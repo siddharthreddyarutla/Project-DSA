@@ -60,7 +60,7 @@ public class PrintAllPermutations {
     }
   }
 
-  private static void swap(int index, int i, int[] nums) {
+  public static void swap(int index, int i, int[] nums) {
     int temp = nums[index];
     nums[index] = nums[i];
     nums[i] = temp;

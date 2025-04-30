@@ -1,4 +1,4 @@
-package sdesheet;
+package sdesheet.arrays;
 
 
 import java.util.ArrayList;
@@ -10,15 +10,15 @@ public class PascalTriangle {
 
   /**
    * Given an integer numRows, return the first numRows of Pascal's triangle.
-   *
+   * <p>
    * In Pascal's triangle, each number is the sum of the two numbers directly above it as shown:
-   *
+   * <p>
    * Example 1:
-   *
+   * <p>
    * Input: numRows = 5
    * Output: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
    * Example 2:
-   *
+   * <p>
    * Input: numRows = 1
    * Output: [[1]]
    */
@@ -40,16 +40,18 @@ public class PascalTriangle {
   /**
    * Problem 1 : In this case, we are given the row number r and the column number c, and we need to
    * find out the element at position (r,c).
-   *
-   *  use: nCr formula = n! / r! * (n -r)!
-   *
-   * We have an easier formula to find out the element i.e. r-1Cc-1. Let’s try to analyze the formula
+   * <p>
+   * use: nCr formula = n! / r! * (n -r)!
+   * <p>
+   * We have an easier formula to find out the element i.e. r-1Cc-1. Let’s try to analyze the
+   * formula
    * to find the value of the combination assuming r-1 as n and c-1 as r:
-   *
+   * <p>
    * Time Complexity: O(c), where c = given column number.
    * Reason: We are running a loop for r times, where r is c-1.
-   *
+   * <p>
    * Space Complexity: O(1) as we are not using any extra space.
+   *
    * @param n
    * @param r
    *
@@ -57,23 +59,22 @@ public class PascalTriangle {
    */
   public static long nCr(int n, int r) {
 
-    n -=1;
-    r -=1;
+    n -= 1;
+    r -= 1;
     int nMinusR = n - r;
     int nFac = 1;
     int rFac = 1;
 
-    for (int i=n;i>nMinusR; i--) {
+    for (int i = n; i > nMinusR; i--) {
       nFac *= i;
     }
-    for (int i=1; i<=r; i++) {
+    for (int i = 1; i <= r; i++) {
       rFac *= i;
     }
     return (long) nFac / rFac;
   }
 
   /**
-   *
    * n=5, r=3
    * n=4, r=2
    * 4*3/2*1
@@ -81,6 +82,7 @@ public class PascalTriangle {
    *
    * @param n
    * @param r
+   *
    * @return
    */
   public static long nCrOptimized(int n, int r) {
@@ -100,14 +102,14 @@ public class PascalTriangle {
    * which can vary from 0 to n-1.
    * Reason: We are calculating the element for each column. Now, there are total n columns, and
    * for each column, the calculation of the element takes O(r) time where r is the column index.
-   *
+   * <p>
    * Space Complexity: O(1) as we are not using any extra space.
    */
   public static List<Long> nthRow(int r) {
     // use ncr formula to do
     List<Long> ans = new ArrayList<>();
-    for (int c=1; c<=r;c++) {
-        ans.add(nCrOptimized(r, c));
+    for (int c = 1; c <= r; c++) {
+      ans.add(nCrOptimized(r, c));
     }
     return ans;
   }
@@ -121,7 +123,7 @@ public class PascalTriangle {
       if (i == r) {
         ans.add(1L);
       } else {
-        ans.add(ans.get(pos-1) * i / pos);
+        ans.add(ans.get(pos - 1) * i / pos);
         pos++;
       }
     }

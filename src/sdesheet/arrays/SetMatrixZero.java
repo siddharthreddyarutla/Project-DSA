@@ -1,4 +1,4 @@
-package sdesheet;
+package sdesheet.arrays;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -32,16 +32,8 @@ public class SetMatrixZero {
 
 
   public static void main(String[] args) {
-    int[][] matrix = {
-        {1, 1, 1},
-        {1, 0, 1},
-        {1, 1, 1}
-    };
-    int[][] matrix1 = {
-        {0, 1, 2, 0},
-        {3, 4, 5, 2},
-        {1, 3, 1, 5}
-    };
+    int[][] matrix = {{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
+    int[][] matrix1 = {{0, 1, 2, 0}, {3, 4, 5, 2}, {1, 3, 1, 5}};
     setZeros(matrix1);
     System.out.println();
     setZerosBetter(matrix);
@@ -79,6 +71,7 @@ public class SetMatrixZero {
 
   /**
    * Can be optimized with space
+   *
    * @param matrix
    */
   public static void setZerosBetter(int[][] matrix) {
@@ -118,4 +111,5 @@ public class SetMatrixZero {
 
   public static void test(List<Integer> test) {
     System.out.print(test.stream().max(Integer::compareTo));
-  }}
+  }
+}

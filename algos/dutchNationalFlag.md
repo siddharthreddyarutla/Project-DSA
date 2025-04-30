@@ -3,5 +3,5 @@
 [resource](https://www.youtube.com/watch?v=J48aGjfjYTI)
 
 ### problem
-> sdesheet.sort0s1s2s
+> sdesheet.arrays.sort0s1s2s
 

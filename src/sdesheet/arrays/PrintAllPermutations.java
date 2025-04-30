@@ -1,7 +1,6 @@
-package sdesheet;
+package sdesheet.arrays;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class PrintAllPermutations {
@@ -26,7 +25,7 @@ public class PrintAllPermutations {
     temp[3] = 4;
     temp[4] = 5;
     System.out.println(printAllPermutations(nums));
-//            System.out.println(printAllPermutations(temp));
+    //            System.out.println(printAllPermutations(temp));
   }
 
   /**
@@ -45,7 +44,7 @@ public class PrintAllPermutations {
 
   private static void possiblePermutations(int index, int n, int[] nums,
       List<List<Long>> permutations) {
-    if (index == n-1) {
+    if (index == n - 1) {
       List<Long> temp = new ArrayList<>();
       for (int i = 0; i < n; i++) {
         temp.add((long) nums[i]);

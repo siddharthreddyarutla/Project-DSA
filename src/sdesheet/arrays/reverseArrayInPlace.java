@@ -1,4 +1,4 @@
-package sdesheet;
+package sdesheet.arrays;
 
 import java.util.Arrays;
 

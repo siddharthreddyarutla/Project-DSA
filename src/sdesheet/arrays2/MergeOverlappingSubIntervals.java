@@ -1,6 +1,8 @@
-package sdesheet.arrays;
+package sdesheet.arrays2;
 
-import java.util.function.Function;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class MergeOverlappingSubIntervals {
 
@@ -23,10 +25,24 @@ public class MergeOverlappingSubIntervals {
    */
 
   public static void main(String[] args) {
-
+    System.out.println((merge(new int[][] {{1, 3}, {2, 6}, {8, 10}, {15, 18}})));
   }
 
-  public static int[][] merge(int[][] intervals) {
-    return null;
+  public static List<List<Integer>> merge(int[][] intervals) {
+
+    int[][] mergedIntervals = new int[intervals.length][];
+    for (int i = 0; i < intervals.length - 1; i++) {
+      List<Integer> merge = new ArrayList<>();
+      if (intervals[i][1] > intervals[i + 1][0]) {
+        merge.add(intervals[i][0]);
+        merge.add(intervals[i + 1][1]);
+        i++;
+      } else {
+        merge.add(intervals[i][0]);
+        merge.add(intervals[i][1]);
+      }
+      mergedIntervals.add(merge);
+    }
+    return mergedIntervals;
   }
 }

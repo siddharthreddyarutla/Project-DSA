@@ -31,3 +31,105 @@ server.compression.min-response-size=1024
 ```
 
 >Now every response larger than 1 KB is automatically GZIP-compressed — reducing payload size by up to 90%.
+
+
+### Filter and interceptors
+
+Both Filters and Interceptors are used to process requests in Spring, but they differ in terms of scope and usage. Let's break them down:
+
+#### Filter
+
+- Definition: Filters are part of the Servlet specification. They are part of the `javax.servlet` package and operate on HTTP requests and responses. Filters are used to perform tasks like logging, authentication, input validation, etc.
+
+- Execution Scope: Filters are invoked before and after the servlet processing the request. They can modify the request and response objects.
+
+- Implementation: Implement the `javax.servlet.Filter` interface.
+
+```java
+import javax.servlet.*;
+import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
+
+public class RequestLoggingFilter implements Filter {
+
+    @Override
+    public void init(FilterConfig filterConfig) throws ServletException {
+        // Initialization logic (optional)
+    }
+
+    @Override
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
+            throws IOException, ServletException {
+        HttpServletRequest httpRequest = (HttpServletRequest) request;
+        System.out.println("Request URI: " + httpRequest.getRequestURI());
+        
+        // Proceed with the next filter or target resource
+        chain.doFilter(request, response);
+    }
+
+    @Override
+    public void destroy() {
+        // Cleanup logic (optional)
+    }
+}
+```
+
+#### Interceptors
+
+- Definition: Interceptors are part of the Spring MVC framework. They provide additional processing for HTTP requests and responses at specific points, such as before the controller method, after the controller method, and after the complete request processing.
+
+- Execution Scope: Interceptors work at the Handler level, meaning they operate within the Spring MVC context and can access controller-specific data.
+
+- Implementation: Implement the HandlerInterceptor interface or extend HandlerInterceptorAdapter.
+
+```java
+import org.springframework.web.servlet.HandlerInterceptor;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class LoggingInterceptor implements HandlerInterceptor {
+  
+    @Override
+    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+        System.out.println("Pre Handle method: " + request.getRequestURI());
+        return true;  // Proceed with the next interceptor or controller
+    }
+
+    @Override
+    public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, 
+                           org.springframework.web.servlet.ModelAndView modelAndView) throws Exception {
+        System.out.println("Post Handle method: " + request.getRequestURI());
+    }
+
+    @Override
+    public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
+        System.out.println("After Completion method: " + request.getRequestURI());
+    }
+}
+
+```
+
+| **Aspect**                    | **Filter**                                  | **Interceptor**                                        |
+| ----------------------------- | ------------------------------------------- | ------------------------------------------------------ |
+| **Scope**                     | Servlet level (HTTP Request/Response)       | Spring MVC level (Handler methods)                     |
+| **Package**                   | `javax.servlet.Filter`                      | `org.springframework.web.servlet.HandlerInterceptor`   |
+| **Execution**                 | Before and after servlet processing         | Before, after controller, and after request completion |
+| **Order**                     | Configured using `FilterRegistrationBean`   | Configured using `WebMvcConfigurer`                    |
+| **Access to Controller Data** | No                                          | Yes                                                    |
+| **Usage**                     | Authentication, logging, modifying requests | Logging, authorization, pre/post processing            |
+
+
+### Transactional
+
+[Medium url](https://medium.com/javarevisited/every-java-developer-misuses-transactional-6b96c7b91713)
+
+#### Transactional Rules You Keep Forgetting
+
+- ✅ Only works on public methods, called from outside via a Spring proxy.
+- ❌ Doesn’t rollback on checked exceptions unless you say so. (Checked exceptions are compile time exceptions)
+- 🤯 Nested methods share the same transaction unless told otherwise.
+
+
+### Scaling 1M requests per sec
+
+[Medium article](https://medium.com/@gaddamnaveen192/spring-boot-optimization-for-1m-requests-second-1e74ab08c942)

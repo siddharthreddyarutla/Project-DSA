@@ -1,4 +1,4 @@
-package sdesheet.arrays;
+package sdesheet.arrays1;
 
 public class kadanesAlgo {
 

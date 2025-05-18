@@ -1,10 +1,10 @@
-package sdesheet.arrays;
+package sdesheet.arrays2;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class rotateMatrixBy90Degree {
+public class rotateMatrixBy90Degree_48 {
 
   // https://takeuforward.org/data-structure/rotate-image-by-90-degree/
 

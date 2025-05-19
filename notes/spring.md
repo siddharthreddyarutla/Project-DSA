@@ -133,3 +133,17 @@ public class LoggingInterceptor implements HandlerInterceptor {
 ### Scaling 1M requests per sec
 
 [Medium article](https://medium.com/@gaddamnaveen192/spring-boot-optimization-for-1m-requests-second-1e74ab08c942)
+
+
+### Singleton and prototype beans
+
+**Singleton Scope:**
+
+- A single instance of the bean is created and shared across the entire Spring container.
+
+- All requests for that bean will return the same instance.
+
+
+**Prototype Scope:**
+
+- If you want to create a new instance each time the bean is requested, you can set the scope to

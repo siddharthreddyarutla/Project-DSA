@@ -70,7 +70,12 @@ public class SetMatrixZero {
   }
 
   /**
-   * Can be optimized with space
+   * Time Complexity: O(2*(N*M)), where N = no. of rows in the matrix and M = no. of columns in
+   * the matrix.
+   * Reason: In this approach, we are also traversing the entire matrix 2 times and each
+   * traversal is taking O(N*M) time complexity.
+   * <p>
+   * Space Complexity: O(1) as we are not using any extra space.
    *
    * @param matrix
    */

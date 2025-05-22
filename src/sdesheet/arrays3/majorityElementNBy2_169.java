@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class majorityElement {
+public class majorityElementNBy2_169 {
 
   // https://takeuforward.org/data-structure/find-the-majority-element-that-occurs-more-than-n-2-times/
 
@@ -58,6 +58,20 @@ public class majorityElement {
   }
 
   /**
+   * T.C = O(n log n) - for sorting
+   * * S.C = O(1)
+   *
+   * @param nums
+   *
+   * @return
+   */
+  public static int majorityElementOther(int[] nums) {
+    int n = nums.length;
+    Arrays.sort(nums);
+    return nums[n / 2];
+  }
+
+  /**
    * Time Complexity: O(N*logN) + O(N), where N = size of the given array.
    * Reason: We are using a map data structure. Insertion in the map takes logN time. And we are
    * doing it for N elements. So, it results in the first term O(N*logN). The second O(N) is for
@@ -84,5 +98,29 @@ public class majorityElement {
       }
     }
     return -1;
+  }
+
+  /**
+   * Time Complexity: O(N)
+   * Space Complexity: O(1) as we are not using any extra space.
+   *
+   * @param nums
+   *
+   * @return
+   */
+  public static int majorityElementOptimized(int[] nums) {
+    int candidate = -1;
+    int votes = 0;
+    for (int num : nums) {
+      if (votes == 0) {
+        candidate = num;
+        votes++;
+      } else if (candidate == num) {
+        votes++;
+      } else {
+        votes--;
+      }
+    }
+    return candidate;
   }
 }

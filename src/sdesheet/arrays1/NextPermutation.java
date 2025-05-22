@@ -29,14 +29,19 @@ public class NextPermutation {
   public static void main(String[] args) {
     int[] temp = {3, 2, 1};
 
-    int[] temp1 = {1, 2, 3, 6, 5, 4};
+    int[] temp1 = {1, 2, 3, 6, 5, 7, 4};
 
     int[] temp3 = {2, 3, 1};
+
+    int[] temp4 = {1, 3, 2};
+
     System.out.println(nextPermutation(temp));
     nextPermutationOptimized(temp1);
     System.out.println(Arrays.toString(temp1));
     nextPermutationOptimized(temp3);
     System.out.println(Arrays.toString(temp3));
+    nextPermutationOptimized(temp4);
+    System.out.println(Arrays.toString(temp4));
   }
 
   /**

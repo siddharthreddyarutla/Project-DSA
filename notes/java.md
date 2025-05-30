@@ -110,3 +110,7 @@ public static void main(String[] args) {
   System.out.println(power.apply(5));
 }
 ```
+
+## Thread safety
+
+[Medium article](https://levelup.gitconnected.com/how-to-write-thread-safe-classes-in-java-fa5a4f314004)

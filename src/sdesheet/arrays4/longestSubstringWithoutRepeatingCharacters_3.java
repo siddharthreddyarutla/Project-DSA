@@ -1,7 +1,7 @@
 package sdesheet.arrays4;
 
 import java.util.HashSet;
-import java.util.Set;
+import java.util.LinkedList;
 
 public class longestSubstringWithoutRepeatingCharacters_3 {
 
@@ -28,6 +28,11 @@ public class longestSubstringWithoutRepeatingCharacters_3 {
     System.out.println(lengthOfLongestSubstring("dvdf"));
     System.out.println(lengthOfLongestSubstringBetter("dvdf"));
     System.out.println(lengthOfLongestSubstringOptimized("dvdf"));
+    LinkedList<Long> test = new LinkedList<>();
+    test.add(2L);
+    test.getFirst();
+    test.getLast();
+    System.out.println(test);
   }
 
   /**
@@ -99,9 +104,11 @@ public class longestSubstringWithoutRepeatingCharacters_3 {
   }
 
   /**
-   * Time Complexity: O( 2*N ) (sometimes left and right both have to travel complete array)
+   * Time Complexity: O( N ) (sometimes left and right both have to travel complete array)
    * <p>
    * Space Complexity: O(N) where N is the size of HashSet taken for storing the elements
+   * <p>
+   * Sliding window technique
    *
    * @param s
    *

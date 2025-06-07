@@ -31,3 +31,4 @@ Use sliding window when:
 
 ### Problems
 > sdesheet.arrays4.longestSubArrayWithSumKPositives
+> sdesheet.arrays4.longestSubstringWithoutRepeatingCharacters_3

@@ -30,5 +30,5 @@ Use sliding window when:
 - Variable-size window → window grows and shrinks based on a condition.
 
 ### Problems
-> sdesheet.arrays4.longestSubArrayWithSumKPositives
-> sdesheet.arrays4.longestSubstringWithoutRepeatingCharacters_3
+> sdeSheet.arrays4.longestSubArrayWithSumKPositives
+> sdeSheet.arrays4.longestSubstringWithoutRepeatingCharacters_3

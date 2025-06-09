@@ -7,5 +7,5 @@
 
 [Link](https://www.geeksforgeeks.org/boyer-moore-majority-voting-algorithm/)
 
-Problem - `sdesheet.arrays3.majorityElementNBy2_169`
+Problem - `sdeSheet.arrays3.majorityElementNBy2_169`
 

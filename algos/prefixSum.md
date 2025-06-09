@@ -40,6 +40,6 @@ Histogram or 2D matrix problems
 
 ## Problems
 
-> sdesheet.arrays4.longestSubArrayWithZeroSum
-> sdesheet.arrays4.countSubArrayWithSumK_560
-> sdesheet.arrays4.longestSubArrayWithSumK
+> sdeSheet.arrays4.longestSubArrayWithZeroSum
+> sdeSheet.arrays4.countSubArrayWithSumK_560
+> sdeSheet.arrays4.longestSubArrayWithSumK

@@ -131,3 +131,7 @@ It happens in two cases:
 1. **In a single-threaded program** — When modifying a collection while iterating over it.
 2. **In a multi-threaded program** — When one thread modifies a collection while another thread is iterating over it
 
+
+## Java collections
+
+[Medium article](https://www.javaguides.net/2025/02/top-15-java-collections-and-generics.html)

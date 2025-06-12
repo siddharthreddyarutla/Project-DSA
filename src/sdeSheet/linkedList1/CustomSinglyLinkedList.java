@@ -11,7 +11,7 @@ public class CustomSinglyLinkedList<T> {
   public Node tail;
   public Long size = 0L;
 
-  CustomSinglyLinkedList() {
+  public CustomSinglyLinkedList() {
 
   }
 

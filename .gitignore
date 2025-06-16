@@ -1,5 +1,9 @@
 *.log
 ./out
-./images
 ./test.iml
 ./Project-DSA.iml
+
+/images
+/out
+/test.iml
+/Project-DSA.iml

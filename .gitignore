@@ -1,1 +1,5 @@
 *.log
+./out
+./images
+./test.iml
+./Project-DSA.iml

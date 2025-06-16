@@ -135,3 +135,7 @@ It happens in two cases:
 ## Java collections
 
 [Medium article](https://www.javaguides.net/2025/02/top-15-java-collections-and-generics.html)
+
+## About interfaces
+
+[Medium article](https://anushasp07.medium.com/java-8-to-17-how-interfaces-have-transformed-over-time-ed4a93771039)

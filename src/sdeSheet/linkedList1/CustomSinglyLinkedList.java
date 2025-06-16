@@ -26,8 +26,9 @@ public class CustomSinglyLinkedList<T> {
   public class Node {
     public T value;
     public Node next;
+    public Node bottom; // Note: This is added for one problem (flatten array for code ref)
 
-    Node(T value) {
+    public Node(T value) {
       this.value = value;
       this.next = null;
     }

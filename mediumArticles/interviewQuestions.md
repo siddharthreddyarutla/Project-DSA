@@ -6,4 +6,8 @@
 
 Microservice based [Medium article](https://codefarm0.medium.com/10-tricky-microservices-scenario-based-interview-questions-and-answers-6a2309a1ea34)
 
-jaa collections [Medium article](https://medium.com/@pudarimadhavi99/mastering-java-collections-15-tricky-interview-questions-every-developer-should-know-18edb64d60e1)
+java collections [Medium article](https://medium.com/@pudarimadhavi99/mastering-java-collections-15-tricky-interview-questions-every-developer-should-know-18edb64d60e1)
+
+java - [Medium article](https://medium.com/@shivamsrivastava.iec/e21dffbe1d7d)
+
+DSA q [Medium article](https://medium.com/javarevisited/top-10-common-algorithm-interview-questions-and-answers-in-java-2025-6b8d7438af43)

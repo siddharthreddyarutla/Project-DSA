@@ -22,7 +22,7 @@ public class ReverseLinkedList_206 {
     customSinglyLinkedList1.addList(List.of(1L, 2L, 3L, 4L, 5L));
     customSinglyLinkedList.display(reverseList(customSinglyLinkedList.getHead()));
     System.out.println();
-    customSinglyLinkedList.display(reverseList1(customSinglyLinkedList1.getHead()));
+    customSinglyLinkedList.display(reverseListOptimized(customSinglyLinkedList1.getHead()));
   }
 
   /**
@@ -37,7 +37,7 @@ public class ReverseLinkedList_206 {
    *
    * @return
    */
-  public static CustomSinglyLinkedList<Long>.Node reverseList1(
+  public static CustomSinglyLinkedList<Long>.Node reverseList(
       CustomSinglyLinkedList<Long>.Node head) {
     CustomSinglyLinkedList<Long>.Node temp = head;
     Stack<Long> stack = new Stack<>();
@@ -53,7 +53,7 @@ public class ReverseLinkedList_206 {
     return head;
   }
 
-  public static CustomSinglyLinkedList<Long>.Node reverseList(
+  public static CustomSinglyLinkedList<Long>.Node reverseListOptimized(
       CustomSinglyLinkedList<Long>.Node head) {
     CustomSinglyLinkedList<Long>.Node prev = null;
     CustomSinglyLinkedList<Long>.Node temp = head;

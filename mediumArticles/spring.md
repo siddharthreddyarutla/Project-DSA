@@ -160,3 +160,6 @@ Spring cannot inject values into static fields using @Value because dependency i
 - When it creates a bean, it injects dependencies into that bean’s instance fields.
 
 - However, static fields belong to the class itself, not any one instance — Spring does not manage class-level static context.
+
+## Advanced spring 
+[Medium article](https://medium.com/@pudarimadhavi99/advanced-spring-boot-concepts-every-java-developer-should-know-part-2-56f37d76f91a)

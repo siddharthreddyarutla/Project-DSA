@@ -163,3 +163,7 @@ Spring cannot inject values into static fields using @Value because dependency i
 
 ## Advanced spring 
 [Medium article](https://medium.com/@pudarimadhavi99/advanced-spring-boot-concepts-every-java-developer-should-know-part-2-56f37d76f91a)
+
+## Cascade Types in JPA
+
+[Medium article](https://medium.com/@gaddamnaveen192/from-persist-to-remove-everything-you-need-to-know-about-cascade-types-in-jpa-84a3a065c621)

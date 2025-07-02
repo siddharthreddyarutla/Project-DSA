@@ -1,4 +1,4 @@
-package utils.LinkedListUtility;
+package utils;
 
 public class Node<T> {
 

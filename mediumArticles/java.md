@@ -139,3 +139,12 @@ It happens in two cases:
 ## About interfaces
 
 [Medium article](https://anushasp07.medium.com/java-8-to-17-how-interfaces-have-transformed-over-time-ed4a93771039)
+
+## Internal implementation of java
+
+[Medium article](https://medium.com/@saquibdev/53546c8a6539)
+
+
+## JWT
+
+[Medium article](https://blog.stackademic.com/jwt-in-interviews-how-to-sound-smarter-than-you-actually-are-e47674c661cc)

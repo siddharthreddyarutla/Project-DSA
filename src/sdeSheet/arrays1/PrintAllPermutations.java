@@ -25,7 +25,7 @@ public class PrintAllPermutations {
     temp[3] = 4;
     temp[4] = 5;
     System.out.println(printAllPermutations(nums));
-    //            System.out.println(printAllPermutations(temp));
+    System.out.println(printAllPermutations(temp));
   }
 
   /**

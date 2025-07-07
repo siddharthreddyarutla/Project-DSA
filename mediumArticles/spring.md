@@ -172,3 +172,11 @@ Spring cannot inject values into static fields using @Value because dependency i
 ## ConfigurationProperties
 
 [Medium article](https://medium.com/@pudarimadhavi99/stop-using-value-in-spring-boot-3-java-f63ca3155c86)
+
+## Validation 
+
+> Suppose you have a @PostMapping endpoint in your Spring Boot application that accepts a @RequestBody object annotated with validation annotations like @NotBlank.
+Can you explain how Spring handles validation internally when a client sends invalid input?
+
+Please walk me through the flow starting from the request hitting the controller to how the error response is returned to the client.
+[Medium article](https://medium.com/@gaddamnaveen192/spring-boot-valid-with-beautiful-error-responses-7aede9142ae4)

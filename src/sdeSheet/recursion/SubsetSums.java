@@ -49,6 +49,16 @@ public class SubsetSums {
   }
 
   /**
+   * Algo:
+   *
+   * For each element in the array, you have 2 choices:
+   *
+   * Include the element in the current subset.
+   *
+   * Exclude the element from the current subset.
+   */
+
+  /**
    * Base case index == arr.length	You’ve considered every element, so the running total sum
    * equals the sum of one particular subset. You push it into list.
    * <p>
@@ -77,6 +87,18 @@ public class SubsetSums {
     subsetSum(index + 1, arr, list, sum);
   }
 
+  /**
+   * Time Complexity: O(2^n). Each index has two ways. You can either pick it up
+   * or not pick it. So for n index time complexity for O(2^n)
+   * <p>
+   * Space Complexity: O(2^n) for storing subset sums, since 2^n subsets can be generated for an
+   * array of size n.
+   *
+   * @param index
+   * @param arr
+   * @param list
+   * @param sum
+   */
   public static void subsetSumWithoutMutation(int index, int[] arr, List<Integer> list, int sum) {
     if (index == arr.length) {
       list.add(sum);

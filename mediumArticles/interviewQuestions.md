@@ -11,3 +11,7 @@ java collections [Medium article](https://medium.com/@pudarimadhavi99/mastering-
 java - [Medium article](https://medium.com/@shivamsrivastava.iec/e21dffbe1d7d)
 
 DSA q [Medium article](https://medium.com/javarevisited/top-10-common-algorithm-interview-questions-and-answers-in-java-2025-6b8d7438af43)
+
+TCS - [Medium article](https://medium.com/@shivamsrivastava.iec/aad8eb936a0b)
+ 
+Scenario based interview questions - [Medium article](https://medium.com/@shivamsrivastava.iec/b567642867cd)

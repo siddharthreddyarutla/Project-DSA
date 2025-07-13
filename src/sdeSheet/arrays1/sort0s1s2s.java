@@ -106,13 +106,13 @@ public class sort0s1s2s {
 
     while (mid <= high) {
       if (nums[mid] == 0) {
-        PrintAllPermutations.swap(low, mid, nums);
+        PrintAllPermutations_46.swap(low, mid, nums);
         low++;
         mid++;
       } else if (nums[mid] == 1) {
         mid++;
       } else {
-        PrintAllPermutations.swap(high, mid, nums);
+        PrintAllPermutations_46.swap(high, mid, nums);
         high--;
       }
     }

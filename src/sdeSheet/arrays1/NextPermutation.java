@@ -59,7 +59,7 @@ public class NextPermutation {
     }
     boolean nextPermutationFound = false;
     List<List<Long>> permutations =
-        PrintAllPermutations.printAllPermutations(Arrays.stream(nums).sorted().toArray());
+        PrintAllPermutations_46.printAllPermutations(Arrays.stream(nums).sorted().toArray());
     for (List<Long> permutation : permutations) {
       if (nextPermutationFound) {
         return permutation;

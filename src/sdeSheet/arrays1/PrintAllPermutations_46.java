@@ -3,7 +3,7 @@ package sdeSheet.arrays1;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PrintAllPermutations {
+public class PrintAllPermutations_46 {
 
   /**
    * Finding all possible permutations.

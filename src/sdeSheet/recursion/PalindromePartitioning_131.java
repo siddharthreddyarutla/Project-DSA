@@ -3,7 +3,7 @@ package sdeSheet.recursion;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PalindromePartitioning {
+public class PalindromePartitioning_131 {
 
   // https://takeuforward.org/data-structure/palindrome-partitioning/
 
@@ -22,7 +22,7 @@ public class PalindromePartitioning {
    */
 
   public static void main(String[] args) {
-    PalindromePartitioning s = new PalindromePartitioning();
+    PalindromePartitioning_131 s = new PalindromePartitioning_131();
     System.out.println(s.partition("aabb"));
   }
 

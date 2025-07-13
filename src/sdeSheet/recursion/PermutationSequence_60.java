@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 
-public class PermutationSequence {
+public class PermutationSequence_60 {
 
   // https://takeuforward.org/data-structure/find-k-th-permutation-sequence/
 

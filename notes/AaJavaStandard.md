@@ -51,3 +51,6 @@
 
 
 18. Use Constructor injection over field injection
+    
+
+19. Use functional interface 

@@ -180,3 +180,6 @@ Can you explain how Spring handles validation internally when a client sends inv
 
 Please walk me through the flow starting from the request hitting the controller to how the error response is returned to the client.
 [Medium article](https://medium.com/@gaddamnaveen192/spring-boot-valid-with-beautiful-error-responses-7aede9142ae4)
+
+## MapKeyColumn
+[Medium article](https://medium.com/@gaddamnaveen192/enterprise-level-map-handling-in-spring-boot-with-mapkeycolumn-acef7a465d64)

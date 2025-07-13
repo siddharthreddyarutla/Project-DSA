@@ -1,4 +1,6 @@
-Sure! Let’s break down **JPA vs Hibernate** in **complete detail**, with real-world analogies and clear distinctions.
+# JPA and Hibernate
+
+[Interview questions](https://medium.com/@gaddamnaveen192/22-top-jpa-interview-questions-ca1b199fc9b4)
 
 ---
 

@@ -2,6 +2,7 @@
 
 1. Java Records for clean data modeling
 
+
 2. Strategy Pattern + Lambdas for flexible decision-making
 
 
@@ -54,3 +55,6 @@
     
 
 19. Use functional interface 
+
+
+20. [rules](https://medium.com/@gaddamnaveen192/12-golden-rules-every-java-developer-should-live-by-most-balanced-bf1d99aa761d)

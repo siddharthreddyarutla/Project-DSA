@@ -25,7 +25,7 @@ public class stockBuyAndSell {
    */
 
   public static void main(String[] args) {
-    System.out.println(maxProfit(new int[] {7, 6, 8, 5, 2, 3, 2}));
+    System.out.println(maxProfit(new int[] {7,1,5,3,6,4}));
     System.out.println(maxProfitOptimal(new int[] {7, 6, 8, 5, 2, 3, 2}));
   }
 
@@ -51,6 +51,7 @@ public class stockBuyAndSell {
 
 
   public static int maxProfitOptimal(int[] prices) {
+    // 7,1,5,3,6,4
     int max = 0;
     int min = prices[0];
     for (int price : prices) {

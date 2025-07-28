@@ -7,9 +7,13 @@ public class FindDuplicateInAnArrayOfIntegers_287 {
   // https://takeuforward.org/data-structure/find-the-duplicate-in-an-array-of-n1-integers/
 
   /**
-   * Problem Statement: Given an array of N + 1 size, where each element is between 1 and N.
-   * Assuming there is only one duplicate number, your task is to find the duplicate number.
+   * Given an array of integers nums containing n + 1 integers where each integer is in the range
+   * [1, n] inclusive.
    * <p>
+   * There is only one repeated number in nums, return this repeated number.
+   * <p>
+   * You must solve the problem without modifying the array nums and using only constant extra
+   * space.
    * Examples:
    * Example 1:
    * <p>
@@ -32,6 +36,7 @@ public class FindDuplicateInAnArrayOfIntegers_287 {
     System.out.println(findDuplicate(new int[] {1, 3, 4, 2, 2}));
     System.out.println(findDuplicateOptimized(new int[] {1, 3, 4, 2, 2}));
     System.out.println(findDuplicateOptimized1(new int[] {1, 3, 4, 2, 2}));
+    System.out.println(findDuplicateOptimized2(new int[] {1, 3, 4, 2, 2}));
   }
 
   /**
@@ -95,5 +100,24 @@ public class FindDuplicateInAnArrayOfIntegers_287 {
       }
     }
     return 0;
+  }
+
+  public static int findDuplicateOptimized2(int[] nums) {
+    int slow = nums[0];
+    int fast = nums[0];
+
+    // Phase 1: Find intersection
+    do {
+      slow = nums[slow];
+      fast = nums[nums[fast]];
+    } while (slow != fast);
+
+    // Phase 2: Find entrance (duplicate)
+    slow = nums[0];
+    while (slow != fast) {
+      slow = nums[slow];
+      fast = nums[fast];
+    }
+    return slow;
   }
 }

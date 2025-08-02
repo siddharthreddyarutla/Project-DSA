@@ -33,10 +33,9 @@ public class WordBreak {
    */
 
   public static void main(String[] args) {
-    //    System.out.println(wordBreak("leetcode", Arrays.asList("leet", "code")));
-    //    System.out.println(wordBreak("applepenapple", Arrays.asList("apple", "pen")));
-    //    System.out.println(wordBreak("catsandog", Arrays.asList("cats", "dog", "sand", "and",
-    //    "cat")));
+    System.out.println(wordBreak("leetcode", Arrays.asList("leet", "code")));
+    System.out.println(wordBreak("applepenapple", Arrays.asList("apple", "pen")));
+    System.out.println(wordBreak("catsandog", Arrays.asList("cats", "dog", "sand", "and", "cat")));
     System.out.println(wordBreak("cars", Arrays.asList("car", "ca", "rs")));
     System.out.println(wordBreak1("cars", Arrays.asList("car", "ca", "rs")));
   }

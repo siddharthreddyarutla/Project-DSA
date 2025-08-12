@@ -18,5 +18,10 @@ So far, you’ve learned:
 12. The var Keyword
 13. Immutable Collections
 14. CompletableFuture for Async Workflows
-
-[Medium article](https://rameshfadatare.medium.com/master-modern-java-like-a-pro-the-var-keyword-part-12-958e07276b02)
+15. java.util.concurrent — The Secret to Efficient Multithreading
+16. Optional 
+17. @valid Validation 
+18. Use Constructor injection over field injection 
+19. Use functional interface 
+20. [rules](https://medium.com/@gaddamnaveen192/12-golden-rules-every-java-developer-should-live-by-most-balanced-bf1d99aa761d)
+21. [Medium article](https://rameshfadatare.medium.com/master-modern-java-like-a-pro-the-var-keyword-part-12-958e07276b02)

@@ -74,7 +74,6 @@ public class countSubArrayWithSumK_560 {
     int[] prefixSum = new int[arr.length];
     int cnt = 0;
     Map<Integer, Integer> map = new HashMap<>(arr.length);
-
     prefixSum[0] = arr[0];
     for (int i = 1; i < n; i++) {
       prefixSum[i] = prefixSum[i - 1] + arr[i];

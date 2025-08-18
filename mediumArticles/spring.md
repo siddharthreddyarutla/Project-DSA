@@ -123,6 +123,10 @@ public class LoggingInterceptor implements HandlerInterceptor {
 
 [Medium url](https://medium.com/javarevisited/every-java-developer-misuses-transactional-6b96c7b91713)
 
+[Basic](https://codefarm0.medium.com/beginners-guide-to-transactional-in-spring-boot-18a04e2a84bb)
+
+[Internal impl](https://codefarm0.medium.com/spring-transaction-internals-what-really-happens-under-the-hood-175b09a32db8)
+
 #### Transactional Rules You Keep Forgetting
 
 - ✅ Only works on public methods, called from outside via a Spring proxy.

@@ -15,3 +15,5 @@ DSA q [Medium article](https://medium.com/javarevisited/top-10-common-algorithm-
 TCS - [Medium article](https://medium.com/@shivamsrivastava.iec/aad8eb936a0b)
  
 Scenario based interview questions - [Medium article](https://medium.com/@shivamsrivastava.iec/b567642867cd)
+
+java - [Article](https://medium.com/@ajit34555/java-interview-prep-series-493c703dff32)

@@ -25,6 +25,6 @@ So far, you’ve learned:
 19. Use functional interface 
 20. [rules](https://medium.com/@gaddamnaveen192/12-golden-rules-every-java-developer-should-live-by-most-balanced-bf1d99aa761d)
 21. [Medium article](https://rameshfadatare.medium.com/master-modern-java-like-a-pro-the-var-keyword-part-12-958e07276b02)
-22. **StringBuilder** for concatenation
+22. **StringBuilder** for concatenation - [Resource](https://medium.com/@gaddamnaveen192/why-stringbuilder-beats-in-java-loops-memory-explained-80c7c8bf0076)
 23.  **Initial Capacities** - Default ArrayList starts with capacity 10, grows 50% each resize
 24. **WeakHashMap** - for cache

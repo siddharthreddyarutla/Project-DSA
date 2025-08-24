@@ -187,3 +187,8 @@ Please walk me through the flow starting from the request hitting the controller
 
 ## MapKeyColumn
 [Medium article](https://medium.com/@gaddamnaveen192/enterprise-level-map-handling-in-spring-boot-with-mapkeycolumn-acef7a465d64)
+
+
+## Retryable and recover
+
+[Resource](https://medium.com/@gaddamnaveen192/why-retryable-and-recover-could-save-your-microservice-in-production-1f68055bc8f3)

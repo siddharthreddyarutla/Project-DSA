@@ -1,4 +1,4 @@
-package StackAndQueue;
+package sdeSheet.StackAndQueue;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -105,3 +105,78 @@ maxHeap.add(8);
 System.out.println(maxHeap.poll()); // 8
 ```
 
+
+### When to use what
+
+Great question 👌 — this is a key interview insight.
+
+---
+
+### 🔑 Why **min-heap of size k** is preferred for *Top K Frequent*:
+
+1. **Max-heap approach (naïve)**
+
+    * Build a max-heap of all `n` unique words.
+    * Pop `k` times.
+    * Time: **O(n log n + k log n)** (building + popping).
+    * Space: **O(n)**.
+
+2. **Min-heap of size k approach (optimized)**
+
+    * Keep a heap of size `k`.
+    * For each word:
+
+        * Push into heap.
+        * If heap size > `k`, pop the *smallest* (least frequent).
+    * End: heap contains exactly the **k most frequent** words.
+    * Time: **O(n log k)** (since each push/pop is `log k`, not `log n`).
+    * Space: **O(k)** for the heap.
+
+---
+
+### ✅ Example to make it clear
+
+Suppose we want **top 3 frequent words**.
+
+Frequencies:
+
+```
+a → 100
+b → 50
+c → 10
+d → 9
+e → 1
+```
+
+* **Max-heap**:
+
+    * Insert all 5 → O(5 log 5).
+    * Pop 3 → O(3 log 5).
+    * Heap stored all 5, even though we only needed top 3.
+
+* **Min-heap of size 3**:
+
+    * Insert `a, b, c` → heap = {a=100, b=50, c=10}.
+    * See `d=9` → smaller than heap min (`10`), so ignore.
+    * See `e=1` → smaller than heap min, ignore.
+    * Done → heap has {a, b, c}, the correct top 3.
+    * Never wasted time storing `d` or `e`.
+
+👉 Much more efficient when `n` (unique words) is large and `k` is small.
+
+---
+
+### 🔎 Rule of Thumb
+
+* Use **max-heap** if you want *all sorted results*.
+* Use **min-heap of size k** if you want *just the top k* efficiently.
+
+---
+
+⚡ Interviewers love when you say:
+
+> “I’ll use a **min-heap of size k** because it gives me O(n log k), which is faster than a full max-heap O(n log n) when k is much smaller than n.”
+
+---
+
+Would you like me to also show how this differs from the **Top K Frequent Elements** problem (numbers instead of words), where we don’t need lexicographic tie-breaking?

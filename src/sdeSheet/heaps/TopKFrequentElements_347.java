@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.PriorityQueue;
 
-public class TopKFrequentElements {
+public class TopKFrequentElements_347 {
 
   /**
    * Given an integer array nums and an integer k, return the k most frequent elements. You may

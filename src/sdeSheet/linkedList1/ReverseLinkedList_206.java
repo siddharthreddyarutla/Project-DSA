@@ -53,6 +53,31 @@ public class ReverseLinkedList_206 {
     return head;
   }
 
+  /*
+  Other way of doing this
+
+  public ListNode reverseList(ListNode head) {
+    if (head == null) {
+      return null;
+    }
+    Stack<Integer> stack = new Stack<>();
+    ListNode temp = head;
+    while (temp != null) {
+      stack.push(temp.val);
+      temp = temp.next;
+    }
+
+    ListNode reversedLL = new ListNode(stack.pop());
+    temp = reversedLL;
+    while (!stack.isEmpty()) {
+      ListNode newNode = new ListNode(stack.pop());
+      temp.next = newNode;
+      temp = temp.next;
+    }
+    return reversedLL;
+  }
+  */
+
   public static CustomSinglyLinkedList<Long>.Node reverseListOptimized(
       CustomSinglyLinkedList<Long>.Node head) {
     CustomSinglyLinkedList<Long>.Node prev = null;

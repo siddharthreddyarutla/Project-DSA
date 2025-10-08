@@ -33,5 +33,15 @@ SELECT number,
 FROM Numbers;
 ```
 
+## UNION ALL
 
+The UNION ALL command combines the result set of two or more SELECT statements (allows duplicate values).
+
+ex:
+```mysql-sql
+SELECT City FROM Customers
+UNION ALL
+SELECT City FROM Suppliers
+ORDER BY City;
+```
 

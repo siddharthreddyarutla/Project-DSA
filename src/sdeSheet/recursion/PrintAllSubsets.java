@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 public class PrintAllSubsets {
 
   public static void main(String[] args) {
-    System.out.println(printAllTheSubsets(new int[] {2, 3}));
+    System.out.println(printAllTheSubsets(new int[] {1,2,3}));
   }
 
   public static List<List<Integer>> printAllTheSubsets(int[] arr) {

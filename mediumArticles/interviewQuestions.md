@@ -17,3 +17,5 @@ TCS - [Medium article](https://medium.com/@shivamsrivastava.iec/aad8eb936a0b)
 Scenario based interview questions - [Medium article](https://medium.com/@shivamsrivastava.iec/b567642867cd)
 
 java - [Article](https://medium.com/@ajit34555/java-interview-prep-series-493c703dff32)
+
+java - [Resource](https://rathod-ajay.medium.com/java-string-interview-questions-from-junior-to-senior-developer-2025-guide-5175811c7d73)

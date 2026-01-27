@@ -1,5 +1,6 @@
 package sdeSheet.arrays4;
 
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
 
@@ -27,7 +28,7 @@ public class longestSubstringWithoutRepeatingCharacters_3 {
   public static void main(String[] args) {
     System.out.println(lengthOfLongestSubstring("dvdf"));
     System.out.println(lengthOfLongestSubstringBetter("dvdf"));
-    System.out.println(lengthOfLongestSubstringOptimized("dvdf"));
+    System.out.println(lengthOfLongestSubstringOptimized("pwwkew"));
     LinkedList<Long> test = new LinkedList<>();
     test.add(2L);
     test.getFirst();
@@ -108,7 +109,7 @@ public class longestSubstringWithoutRepeatingCharacters_3 {
    * <p>
    * Space Complexity: O(N) where N is the size of HashSet taken for storing the elements
    * <p>
-   * Sliding window technique
+   * Sliding window technique + Hashing
    *
    * @param s
    *
@@ -138,5 +139,33 @@ public class longestSubstringWithoutRepeatingCharacters_3 {
       }
     }
     return max;
+  }
+
+
+  public int lengthOfLongestSubstringRevision(String s) {
+    int size = s.length();
+    if (size == 0 || size == 1) {
+      return size;
+    }
+
+    Integer res = Integer.MIN_VALUE;
+
+    int k = 0;
+    while (k < size) {
+      HashMap<String, Long> hashmap = new HashMap<>();
+      for (int i = k; i < size; i++) {
+        char c = s.charAt(i);
+        if (hashmap.containsKey(String.valueOf(c))) {
+          res = Math.max(res, hashmap.size());
+          break;
+        } else {
+          hashmap.put(String.valueOf(c), 1L);
+          res = Math.max(res, hashmap.size());
+        }
+      }
+      k++;
+    }
+
+    return res;
   }
 }

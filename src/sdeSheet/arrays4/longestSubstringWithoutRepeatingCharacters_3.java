@@ -105,11 +105,12 @@ public class longestSubstringWithoutRepeatingCharacters_3 {
   }
 
   /**
+   * Sliding window technique + Hashing
+   * <p>
    * Time Complexity: O( N ) (sometimes left and right both have to travel complete array)
    * <p>
    * Space Complexity: O(N) where N is the size of HashSet taken for storing the elements
    * <p>
-   * Sliding window technique + Hashing
    *
    * @param s
    *

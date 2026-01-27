@@ -38,6 +38,8 @@ public class ContainerWIthMostWater_11 {
   }
 
   /**
+   * Two Pointer / Greedy
+   *
    * Time complexity: O(n)
    * Space complexity: O(1)
    *

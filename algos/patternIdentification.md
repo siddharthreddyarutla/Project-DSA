@@ -273,23 +273,44 @@ If brute force is slow → optimize.
 
 ---
 
+### 🔹 **Stack identification keywords**
+
+* nested
+* valid / balanced
+* recent / previous
+* undo
+* matching brackets
+* next greater / smaller element
+
+That’s it.
+Now your checklist is **complete and interview-ready**.
+
+
+A monotonic stack is a specialized data structure (a stack) that maintains its elements in a strictly increasing or decreasing order. It is used to efficiently solve "next greater element" or "previous smaller element" problems
+
+* Key Characteristics and Usage:
+    * Monotonic Increasing Stack: Elements are kept in ascending order from bottom to top. When a new element is smaller than the top, it is pushed; if larger, the top is popped until the order is restored. Used to find the next smaller element.
+    * Monotonic Decreasing Stack: Elements are kept in descending order from bottom to top. When a new element is larger than the top, it is pushed; if smaller, the top is popped. Used to find the next greater element.
+
+
 # 🧠 FINAL MASTER CHECKLIST (MEMORIZE THIS)
 
 ```
-Subarray / substring? → Sliding Window
-Sorted array?         → Two Pointers / Binary Search
-Pairs / frequency?    → HashMap
-Max / Min?            → Greedy or DP
-Tree?                 → DFS / BFS
-Grid / Matrix?        → BFS / DFS
-Shortest path?        → BFS
-Dependencies?         → Topological Sort
-All combinations?     → Backtracking
-Stream data?          → Queue / Heap
-Top K / Kth?          → Heap
-Range queries?        → Prefix Sum
-Repeated work?        → DP / Memo
-Rule-based?           → Simulation
+Subarray / substring?        → Sliding Window
+Sorted array?               → Two Pointers / Binary Search
+Pairs / frequency?          → HashMap
+Max / Min?                  → Greedy or DP
+Tree?                       → DFS / BFS
+Grid / Matrix?              → BFS / DFS
+Shortest path?              → BFS
+Dependencies?               → Topological Sort
+All combinations?           → Backtracking
+Stream data?                → Queue / Heap
+Top K / Kth?                → Heap
+Range queries?              → Prefix Sum
+Repeated work?              → DP / Memo
+Rule-based?                 → Simulation
+Nested / recent / matching? → Stack
 ```
 
 ---

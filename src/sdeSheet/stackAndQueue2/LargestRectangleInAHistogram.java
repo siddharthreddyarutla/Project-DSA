@@ -1,5 +1,6 @@
 package sdeSheet.stackAndQueue2;
 
+import javax.swing.*;
 import java.util.Stack;
 
 public class LargestRectangleInAHistogram {
@@ -23,7 +24,7 @@ public class LargestRectangleInAHistogram {
 
   public static void main(String[] args) {
     System.out.println(largestRectangleArea(new int[] {2, 1, 5, 6, 2, 3}));
-    System.out.println(largestRectangleAreaOptimized(new int[] {1, 8, 6, 2, 5, 4, 8, 3, 7}));
+    System.out.println(largestRectangleAreaOptimized(new int[] {2, 1, 5, 6, 2, 3}));
   }
 
   /**
@@ -48,7 +49,25 @@ public class LargestRectangleInAHistogram {
     return maxHeight;
   }
 
+
   /**
+   * Monotonic Stack
+   * <p>
+   * Idea:
+   * For each bar, find:
+   * Nearest smaller to left
+   * Nearest smaller to right
+   * <p>
+   * Steps
+   * Maintain increasing stack of indices
+   * When current height < stack top:
+   * Pop index
+   * Calculate area using popped height
+   * Add sentinel 0 at end to flush stack
+   * <p>
+   * Formula:
+   * height * (right_smaller_index - left_smaller_index - 1)
+   * <p>
    * Time Complexity: O( 3N )
    * <p>
    * Space Complexity: O(3N) where 3 is for the stack, left small array and a right small array

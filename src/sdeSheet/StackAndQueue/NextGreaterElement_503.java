@@ -29,7 +29,7 @@ public class NextGreaterElement_503 {
 
   public static void main(String[] args) {
     System.out.println(Arrays.toString(nextGreaterElements(new int[] {1, 2, 1})));
-    System.out.println(Arrays.toString(nextGreaterElementsOptimized(new int[] {1, 2, 3, 4, 3})));
+    System.out.println(Arrays.toString(nextGreaterElementsOptimized(new int[] {1, 3, 2, 4})));
   }
 
   /**

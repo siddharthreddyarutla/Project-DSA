@@ -1,14 +1,9 @@
 package sdeSheet.stackAndQueue2;
 
-import utils.Node;
-
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.Map;
-import java.util.PriorityQueue;
 import java.util.Queue;
-import java.util.Stack;
 
 public class LRUcache_146 {
 
@@ -60,11 +55,15 @@ public class LRUcache_146 {
     obj.get(4);
 
     LRUCacheUsingLL lruCacheUsingLL = new LRUCacheUsingLL(1);
-    lruCacheUsingLL.put(2, 1);
+    lruCacheUsingLL.put(1, 1);
+    lruCacheUsingLL.put(2, 2);
+    lruCacheUsingLL.get(1);
+    lruCacheUsingLL.put(3,3);
     lruCacheUsingLL.get(2);
-    lruCacheUsingLL.put(3, 2);
-    lruCacheUsingLL.get(2);
+    lruCacheUsingLL.put(4, 4);
+    lruCacheUsingLL.get(1);
     lruCacheUsingLL.get(3);
+    lruCacheUsingLL.get(4);
   }
 
   /**
@@ -106,9 +105,9 @@ public class LRUcache_146 {
 
 
   /**
-   * Time Complexity:O(N)
+   * Time Complexity:O(1)
    * <p>
-   * Space Complexity:O(1)
+   * Space Complexity:O(N)
    */
   static class LRUCacheUsingLL {
 

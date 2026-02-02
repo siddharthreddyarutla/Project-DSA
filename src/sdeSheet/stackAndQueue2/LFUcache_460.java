@@ -3,6 +3,7 @@ package sdeSheet.stackAndQueue2;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.PriorityQueue;
+import java.util.function.LongFunction;
 
 public class LFUcache_460 {
 
@@ -60,7 +61,18 @@ public class LFUcache_460 {
 
 
   public static void main(String[] args) {
+    LFUCache cache = new LFUCache(2);
 
+    cache.put(1, 1);
+    cache.put(2, 2);
+    cache.get(1);
+    cache.put(3, 3);
+    cache.get(2);
+    cache.get(3);
+    cache.put(4, 4);
+    cache.get(1);
+    cache.get(3);
+    cache.get(4);
   }
 
   static class LFUCache {

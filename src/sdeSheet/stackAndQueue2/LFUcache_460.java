@@ -119,6 +119,7 @@ public class LFUcache_460 {
         node.freq++;
         node.time = ++time;
         queue.offer(node);
+        cache.put(key, node);
       } else {
         if (this._capacity == cache.size()) {
           Node node = queue.poll();

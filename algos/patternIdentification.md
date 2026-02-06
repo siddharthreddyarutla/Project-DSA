@@ -1,8 +1,8 @@
 # 🧠 COMPLETE DSA PATTERN IDENTIFICATION NOTES
 
-*(Amazon OA + Interviews Focused)*
-
 ---
+
+![img.png](../images/dsaPatternMatching.png)
 
 ## 🔰 HOW TO USE THESE NOTES (IMPORTANT)
 

@@ -1,4 +1,4 @@
-package neetCode.twoPointers;
+package neetCode_150.twoPointers;
 
 public class Palindrome {
 

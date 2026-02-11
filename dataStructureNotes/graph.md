@@ -92,4 +92,4 @@ Reference code at
 
 - keep going to 1st unvisited neighbour
 
-![img.png](imgGraph6.png)
+![img.png](../images/imgGraph6.png)

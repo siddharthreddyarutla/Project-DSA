@@ -6,7 +6,7 @@ public class rule14714 {
 
   public static void main(String[] args) {
 
-    LocalDate todayDate = LocalDate.of(2026, 2,3);
+    LocalDate todayDate = LocalDate.of(2026, 2,14);
 
     System.out.println("1 - " + todayDate);
     System.out.println("4 - " + todayDate.plusDays(4));

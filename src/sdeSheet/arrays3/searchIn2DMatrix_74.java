@@ -2,7 +2,7 @@ package sdeSheet.arrays3;
 
 import java.util.Arrays;
 
-public class searchIn2DMatrix_74 {
+public class  searchIn2DMatrix_74 {
 
   // https://takeuforward.org/data-structure/search-in-a-sorted-2d-matrix/
 

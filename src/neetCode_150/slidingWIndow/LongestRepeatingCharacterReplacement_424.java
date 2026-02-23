@@ -30,7 +30,7 @@ public class LongestRepeatingCharacterReplacement_424 {
    */
 
   public static void main(String[] args) {
-    System.out.println(characterReplacement("AABABBA", 1));
+    System.out.println(characterReplacementOptimal("AABABBA", 1));
   }
 
   public static int characterReplacement(String s, int k) {
